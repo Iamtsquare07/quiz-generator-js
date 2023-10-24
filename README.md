@@ -1,1 +1,1 @@
-# quiz-generator-js v1.0.0
+# Quiz Generator with JavaScript v1.0.0
