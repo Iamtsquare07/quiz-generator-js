@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Quiz Generator</title>
+</head>
+
+<body>
+    <h1>Quiz Generator JS</h1>
+    <div class="quiz-root">
+        <h2>Create quizzes that other visitors will take or take one yourself</h2>
+        <div class="quiz">
+            <button id="create-quiz">Create Quiz</button>
+            <button id="load-quiz">Load Quiz</button>
+        </div>
+        <div id="quiz-container"></div>
+
+        <div id="create-quiz-form">
+            <h2>Create a Quiz</h2>
+            <div id="quiz">
+                <div id="quiz-body">
+                    <div class="quiz-question">
+                        <input type="text" id="quiz-title" placeholder="Quiz Title">
+                        <div class="quiz-items">
+                            <input id="question-1" type="text" placeholder="Question 1">
+                            <div class="answer">
+                                <input type="text" id="option-${questionCounter}-1" placeholder="Option">
+                                <input type="checkbox" id="answer-indicator-${questionCounter}-1">
+                            </div>
+                            <div class="answer">
+                                <input type="text" id="option-${questionCounter}-1" placeholder="Option">
+                                <input type="checkbox" id="answer-indicator-${questionCounter}-1">
+                            </div>
+                            <div class="answer">
+                                <input type="text" id="option-${questionCounter}-1" placeholder="Option">
+                                <input type="checkbox" id="answer-indicator-${questionCounter}-1">
+                            </div>
+                            <div class="answer">
+                                <input type="text" id="option-${questionCounter}-1" placeholder="Option">
+                                <input type="checkbox" id="answer-indicator-${questionCounter}-1">
+                            </div>
+                            <button class="add-option" data-question="1">Add new answer</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="add-question">Add Question</button>
+            </div>
+            
+        </div>        
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
